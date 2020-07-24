@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MyReactComponent from './MyReactComponent'
+import MyReactPureComponent from './MyReactPureComponent'
+import MyReactFunctionalComponent from './MyReactFunctionalComponent'
 
 const myHeader = React.createElement (
   'h1',
@@ -14,6 +16,8 @@ function App() {
     <div className="App">
       {myHeader}
       <MyReactComponent/>
+      <MyReactPureComponent/>
+      <MyReactFunctionalComponent/>
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
