@@ -1,11 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MyReactComponent from './MyReactComponent'
+
+const myHeader = React.createElement (
+  'h1',
+  {className: 'myHeader'},
+  'Hello from createElement!!!'
+)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {myHeader}
+      <MyReactComponent/>
+      <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +27,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </div>
     </div>
   );
 }
